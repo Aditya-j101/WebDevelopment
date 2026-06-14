@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Overflow</title>
     <style>
-        
+        .box{
+            width: 20vw;
+            height: 20vh; 
+            border: 2px solid black;
+            /* overflow:auto;
+            overflow-x:hidden;
+            overflow-y:scroll; */
+            overflow: scroll scroll;
+            /* white-space: nowrap;
+            text-overflow: ellipsis ; */
+        }
     </style>
 </head>
 <body>
-    
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae, nostrum earum iure doloremque explicabo maiores temporibus? Consectetur animi hic numquam eum deserunt excepturi ea laborum, dignissimos sed odio repellat assumenda blanditiis 
+    </div>
 </body>
 </html>

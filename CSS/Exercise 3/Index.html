@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 3</title>
+    <title>Card Design</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#e7edf0;
+        }
+
+        .card{
+            width:380px;
+            background:white;
+            border:1px solid #d1d9de;
+            border-radius:18px;
+            padding:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            border-radius:14px;
+        }
+
+        .content{
+            padding:15px;
+        }
+
+        .tags{
+            margin-bottom:20px;
+        }
+
+        .tags span{
+            display:inline-block;
+            border:1px solid #d4dce2;
+            color:#7a8795;
+            border-radius:20px;
+            padding:6px 14px;
+            font-size:14px;
+            margin-right:8px;
+        }
+
+        h2{
+            color:#233443;
+            font-size:42px;
+            font-weight:500;
+            margin-bottom:20px;
+        }
+
+        p{
+            color:#8a97a6;
+            font-size:18px;
+            line-height:1.6;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            text-align:center;
+        }
+
+        .btn button{
+            border:none;
+            background:#dbeafe;
+            color:#3b82f6;
+            padding:14px 34px;
+            border-radius:30px;
+            font-size:16px;
+            font-weight:600;
+            cursor:pointer;
+        }
+
+        .btn button:hover{
+            background:#bfdbfe;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="card">
+        <img src="Exercise 3\card.png">
+
+        <div class="content">
+            <div class="tags">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+
+            <h2>Lago di Braies</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consectetur sodales morbi dignissim sed diam pharetra vitae
+                ipsum odio.
+            </p>
+
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

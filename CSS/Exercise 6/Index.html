@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 6</title>
+    <title>UltraEdit Navbar</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #f5f5f5;
+        }
+
+        nav{
+            width: 100%;
+            height: 90px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            border: 1px solid #dcdcdc;
+        }
+
+        /* Left Section */
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img{
+            width: 55px;
+        }
+
+        .logo-text h2{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .logo-text p{
+            font-size: 12px;
+            color: gray;
+        }
+
+        /* Middle Section */
+        .nav-links{
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links li{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .nav-links li:hover{
+            color: #666;
+        }
+
+        /* Right Section */
+        .actions{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .download-btn{
+            background-color: #f6d64a;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .language{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .search{
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <nav>
+
+        <!-- Left -->
+        <div class="logo">
+            <img src="image.png"
+                 alt="UltraEdit">
+
+            <div class="logo-text">
+                <h2>UltraEdit</h2>
+                <p>By Embarcadero</p>
+            </div>
+        </div>
+
+        <!-- Middle -->
+        <ul class="nav-links">
+            <li>Products <i class="fa-solid fa-angle-down"></i></li>
+
+            <li>Buy</li>
+
+            <li>Renew</li>
+
+            <li>Support <i class="fa-solid fa-angle-down"></i></li>
+
+            <li>Learn <i class="fa-solid fa-angle-down"></i></li>
+
+            <li>Company <i class="fa-solid fa-angle-down"></i></li>
+        </ul>
+
+        <!-- Right -->
+        <div class="actions">
+
+            <button class="download-btn">
+                Download
+            </button>
+
+            <div class="language">
+                <i class="fa-solid fa-globe"></i>
+                <span>English</span>
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+        </div>
+
+    </nav>
+
 </body>
 </html>

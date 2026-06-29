@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Animation Area */
+        .stage {
+            width: 900px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+
+            background: linear-gradient(to bottom, #1d3eff, #0816d4);
+
+            border: 4px solid #222;
+            border-radius: 12px;
+        }
+
+        /* Ball */
+        .ball {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #ff1d1d;
+
+            position: absolute;
+
+            /* [START_POSITION] */
+            left: 20px;
+            bottom: 0;
+
+            animation: bounceMove 4s ease-in-out infinite;
+        }
+
+        /*
+        Replace these values with your desired coordinates.
+
+        [START_POSITION]
+        left: 20px;
+        bottom: 0;
+
+        [END_POSITION]
+        left: 780px;
+        bottom: 0;
+        */
+
+        @keyframes bounceMove {
+
+            0% {
+                left: 20px;          /* [START_POSITION] */
+                bottom: 0;
+            }
+
+            12.5% {
+                bottom: 120px;
+            }
+
+            25% {
+                left: 210px;
+                bottom: 0;
+            }
+
+            37.5% {
+                bottom: 90px;
+            }
+
+            50% {
+                left: 400px;
+                bottom: 0;
+            }
+
+            62.5% {
+                bottom: 65px;
+            }
+
+            75% {
+                left: 590px;
+                bottom: 0;
+            }
+
+            87.5% {
+                bottom: 40px;
+            }
+
+            100% {
+                left: 780px;         /* [END_POSITION] */
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="stage" aria-label="Ball Animation Stage">
+            <div class="ball"></div>
+        </section>
+    </main>
+
+</body>
+</html>
